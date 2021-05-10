@@ -3,6 +3,9 @@
 function baseToDecimalConverter(number, base) {
   let stringToNumber = parseInt(number);
   let stringToBase = parseInt(base);
-  let array = [stringToNumber, stringToBase];
-  return array;
+  if (stringToNumber < stringToBase) {
+    return true;
+  } else {
+    return false;
+  }
 }
